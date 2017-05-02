@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ieD-Xe-qbx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Available Cars-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RaceMyCar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,9 +22,102 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Available Cars" id="IZO-Ox-NP0"/>
+                    <connections>
+                        <segue destination="MM5-Ia-3IE" kind="show" id="T9b-2L-xd9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="129.98500749625188"/>
+        </scene>
+        <!--Current Booking-->
+        <scene sceneID="NEy-0k-exs">
+            <objects>
+                <viewController id="MM5-Ia-3IE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b9D-DH-s00"/>
+                        <viewControllerLayoutGuide type="bottom" id="YGs-8z-Imk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o7x-Hn-O2R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Current Booking" id="UGv-qq-GFG"/>
+                    <connections>
+                        <segue destination="MsB-4j-UiA" kind="show" id="LuZ-H1-CMS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hRh-A0-Aeb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872.8" y="129.98500749625188"/>
+        </scene>
+        <!--About Us-->
+        <scene sceneID="v6z-WJ-e9x">
+            <objects>
+                <viewController id="MsB-4j-UiA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uLI-rt-lQD"/>
+                        <viewControllerLayoutGuide type="bottom" id="ku0-nb-B4N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LzU-bF-lxL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About Us" id="RQN-TS-f20"/>
+                    <connections>
+                        <segue destination="AIV-OP-afR" kind="show" id="XRg-rU-68T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KkV-T6-RwJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2608.8000000000002" y="129.98500749625188"/>
+        </scene>
+        <!--Get In Touch-->
+        <scene sceneID="grB-51-8D5">
+            <objects>
+                <viewController id="AIV-OP-afR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q5z-n1-AT8"/>
+                        <viewControllerLayoutGuide type="bottom" id="x5l-qO-oFd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YFe-vt-Ag1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Get In Touch" id="VvZ-iJ-P3I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1iM-bF-eRe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3340" y="129.98500749625188"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bHp-fB-r8m">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ieD-Xe-qbx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="rny-Kb-h3S">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="IMk-Bg-JRm"/>
+                        <segue destination="MM5-Ia-3IE" kind="relationship" relationship="viewControllers" id="qdv-fG-FRu"/>
+                        <segue destination="MsB-4j-UiA" kind="relationship" relationship="viewControllers" id="RMx-Tj-ETo"/>
+                        <segue destination="AIV-OP-afR" kind="relationship" relationship="viewControllers" id="Uu0-yf-PNW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AxR-Qn-0rA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="T9b-2L-xd9"/>
+        <segue reference="LuZ-H1-CMS"/>
+        <segue reference="XRg-rU-68T"/>
+    </inferredMetricsTieBreakers>
 </document>
