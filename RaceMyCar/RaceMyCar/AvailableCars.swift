@@ -34,19 +34,21 @@ class AvailableCars: UIViewController {
 
     }
     
-    
+    //commencement of next segue that will go to the segue identified as ConfirmBooking.
     @IBAction func Book(_ sender: UIButton) {
         
     
         performSegue(withIdentifier:"ConfirmBooking", sender: sender.tag)
     }
     
+    //reverting to previous segue
     @IBAction func unWindSegue(segue : UIStoryboardSegue)
     {
         
     
     }
     
+    //commencement of next segue that will go to the segue identified as CurrentBooking.
     @IBAction func MyBooking(_ sender: UIButton) {
         performSegue(withIdentifier:"CurrentBooking", sender: sender.tag)
         

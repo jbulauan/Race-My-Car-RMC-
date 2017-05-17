@@ -21,6 +21,8 @@ class Enquiry: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    // Changes the star rating to yellow once tapped to notify the user that they have selected that star.
     @IBAction func StarPressed(_ sender: UIButton) {
         
         if sender.tag == 1{

@@ -15,15 +15,17 @@ class AboutUs: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // Hyperlink feature, this is hyperlinked text will direct to, which is where the website is entered.
         let linkAttributes = [
             NSLinkAttributeName: NSURL(string: "https://www.cams.com.au/motor-sport/safety-integrity/ohs-policy")!,
             NSForegroundColorAttributeName: UIColor.blue
             ] as [String : Any]
         
+        // The word(s) displayed on the user interface that will be hyperlinked to trigger the website.
         let attributedString = NSMutableAttributedString(string: "CAMS.")
         
-        // Set the 'click here' substring to be the link
+        // Setting the "CAMS." letters to be linked
         attributedString.setAttributes(linkAttributes, range: NSMakeRange(0, 5))
         
         self.Text.delegate = self

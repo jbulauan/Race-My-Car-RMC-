@@ -21,12 +21,14 @@ class ViewBooking: UIViewController, MKMapViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //Once buttons are pressed, the next segue will commence
     @IBAction func PaymentInfo(_ sender: UIButton) {
         performSegue(withIdentifier:"CustomerInfo", sender: sender.tag)
         
     }
     
-
+    //Reverts back to previous segue. Back button will be linked to this code
     @IBAction func unWindSegue(segue: UIStoryboardSegue) {
     }
 
