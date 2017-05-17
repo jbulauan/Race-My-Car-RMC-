@@ -275,7 +275,7 @@
         <!--Current Booking-->
         <scene sceneID="NEy-0k-exs">
             <objects>
-                <viewController storyboardIdentifier="CurrentBooking" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MM5-Ia-3IE" customClass="ViewBooking" customModule="RaceMyCar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MM5-Ia-3IE" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b9D-DH-s00"/>
                         <viewControllerLayoutGuide type="bottom" id="YGs-8z-Imk"/>
@@ -343,7 +343,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Payment Information"/>
                                 <connections>
-                                    <action selector="PaymentInfo:" destination="MM5-Ia-3IE" eventType="touchUpInside" id="peu-yw-JXH"/>
+                                    <segue destination="mgn-cJ-Nwf" kind="show" id="gmh-Op-CJx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -353,7 +353,6 @@
                     <navigationItem key="navigationItem" id="0YW-mw-gAc"/>
                     <connections>
                         <segue destination="MsB-4j-UiA" kind="show" id="LuZ-H1-CMS"/>
-                        <segue destination="mgn-cJ-Nwf" kind="show" identifier="CustomerInfo" id="O0Y-xw-rAM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRh-A0-Aeb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -782,10 +781,10 @@
             </objects>
             <point key="canvasLocation" x="1072.5" y="835.56338028169012"/>
         </scene>
-        <!--View Controller-->
+        <!--View Booking-->
         <scene sceneID="FV6-Sg-6jI">
             <objects>
-                <viewController id="5sp-ke-9KD" sceneMemberID="viewController">
+                <viewController id="5sp-ke-9KD" customClass="ViewBooking" customModule="RaceMyCar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bkz-DI-KQn"/>
                         <viewControllerLayoutGuide type="bottom" id="bf4-Jo-gjg"/>
@@ -1102,22 +1101,39 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5M-eG-6nR">
-                                <rect key="frame" x="137" y="509" width="53" height="30"/>
+                                <rect key="frame" x="118" y="509" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Book"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Confirm"/>
                                 <connections>
+                                    <action selector="SaveInfo:" destination="5sp-ke-9KD" eventType="touchUpInside" id="5Pa-4F-9RS"/>
                                     <segue destination="CRy-tL-wco" kind="show" id="XqD-15-OsA"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="Address" destination="qki-S6-HpU" id="Msi-5Y-oHa"/>
+                        <outlet property="BookingLabel" destination="6wg-7G-EUM" id="4ek-wU-8Au"/>
+                        <outlet property="CardNumber" destination="ZF6-gc-yW7" id="K9Y-zn-5MV"/>
+                        <outlet property="Dob" destination="RZm-kc-lu1" id="Sb4-FB-BTU"/>
+                        <outlet property="Email" destination="D8y-Vv-gGw" id="i44-01-nLI"/>
+                        <outlet property="FirstName" destination="nMe-DK-lld" id="G0r-h3-eVR"/>
+                        <outlet property="LastName" destination="OjT-wc-tNe" id="HtE-J1-vR3"/>
+                        <outlet property="Month" destination="WtK-bM-nMC" id="Wpv-H9-iZ9"/>
+                        <outlet property="NameOnCard" destination="YdY-Yv-vmv" id="by6-bw-iF7"/>
+                        <outlet property="PostCode" destination="y9t-xh-epI" id="RZu-2g-zcc"/>
+                        <outlet property="SecurityCode" destination="94b-yy-cOk" id="x68-NW-XUq"/>
+                        <outlet property="State" destination="nND-Hm-lro" id="Vvq-GZ-uPb"/>
+                        <outlet property="Suburb" destination="eAr-HG-pTE" id="bUI-ig-8lc"/>
+                        <outlet property="Year" destination="cNw-8C-wce" id="6uv-EQ-AkI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="plF-hL-vob" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="nCP-pS-mf3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1073" y="1655"/>
+            <point key="canvasLocation" x="1072.5" y="1654.2253521126761"/>
         </scene>
         <!--Available Cars-->
         <scene sceneID="UVx-Hv-H4e">
@@ -1150,25 +1166,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="View your current booking"/>
-                                <connections>
-                                    <action selector="ViewBooking:" destination="CRy-tL-wco" eventType="touchUpInside" id="Ier-oI-q6b"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <connections>
-                        <segue destination="MM5-Ia-3IE" kind="show" identifier="CurrentBooking" id="471-FO-kUH"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLN-L9-WEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1073" y="2402"/>
         </scene>
-        <!--View Controller-->
+        <!--View Booking-->
         <scene sceneID="VYe-qV-U0c">
             <objects>
-                <viewController id="mgn-cJ-Nwf" sceneMemberID="viewController">
+                <viewController id="mgn-cJ-Nwf" customClass="ViewBooking" customModule="RaceMyCar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Y8-10-csx"/>
                         <viewControllerLayoutGuide type="bottom" id="d3C-gP-MjJ"/>
@@ -1481,6 +1491,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Apply Changes"/>
+                                <connections>
+                                    <action selector="SaveInfo:" destination="mgn-cJ-Nwf" eventType="touchUpInside" id="uaS-P9-BgL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QW-aG-HWB">
                                 <rect key="frame" x="9" y="20" width="35" height="33"/>
@@ -1493,11 +1506,26 @@
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="Address" destination="fRq-0S-sSx" id="PPt-nR-vIu"/>
+                        <outlet property="CardNumber" destination="Wp0-In-CTn" id="fkM-P8-nrU"/>
+                        <outlet property="Dob" destination="WGw-aA-540" id="Js7-gU-Vhi"/>
+                        <outlet property="Email" destination="Br2-kU-LOw" id="6gD-OZ-bmP"/>
+                        <outlet property="FirstName" destination="iIR-Hh-m5Q" id="eyt-sQ-YZe"/>
+                        <outlet property="LastName" destination="LaW-RA-lfr" id="6M6-FB-VvH"/>
+                        <outlet property="Month" destination="ZBO-xW-GCm" id="4Vw-Pp-r6m"/>
+                        <outlet property="NameOnCard" destination="w0j-ab-RmC" id="B6y-Z7-Qf1"/>
+                        <outlet property="PostCode" destination="ABk-MM-mwb" id="ypJ-x2-kLj"/>
+                        <outlet property="SecurityCode" destination="Pye-ik-v1k" id="mzw-DB-qDs"/>
+                        <outlet property="State" destination="nDB-BT-fxY" id="u71-eF-mzX"/>
+                        <outlet property="Suburb" destination="lOC-4T-fEd" id="yvC-Db-iff"/>
+                        <outlet property="Year" destination="YIN-s3-CEg" id="erB-ml-ztx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jyZ-pw-V5E" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Dx1-tw-b8v" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1869.375" y="835.56338028169012"/>
+            <point key="canvasLocation" x="1868" y="836"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1gq-Di-gyg">
@@ -1715,9 +1743,9 @@
         <image name="star" width="800" height="800"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="T9b-2L-xd9"/>
+        <segue reference="qdv-fG-FRu"/>
         <segue reference="LuZ-H1-CMS"/>
         <segue reference="XRg-rU-68T"/>
-        <segue reference="bqu-Or-8Ey"/>
+        <segue reference="qFl-j4-3bi"/>
     </inferredMetricsTieBreakers>
 </document>
