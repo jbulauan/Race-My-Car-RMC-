@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1102E31ECC134B002B5D89 /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1102E21ECC134B002B5D89 /* AboutUs.swift */; };
 		BC9F6E3F1EB1A7F100EAEEF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6E3E1EB1A7F100EAEEF3 /* AppDelegate.swift */; };
 		BC9F6E411EB1A7F100EAEEF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6E401EB1A7F100EAEEF3 /* ViewController.swift */; };
 		BC9F6E441EB1A7F100EAEEF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9F6E421EB1A7F100EAEEF3 /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		BC9F6E491EB1A7F100EAEEF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9F6E471EB1A7F100EAEEF3 /* LaunchScreen.storyboard */; };
 		BC9F6E541EB1A7F100EAEEF3 /* RaceMyCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6E531EB1A7F100EAEEF3 /* RaceMyCarTests.swift */; };
 		BC9F6E5F1EB1A7F100EAEEF3 /* RaceMyCarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6E5E1EB1A7F100EAEEF3 /* RaceMyCarUITests.swift */; };
+		BCBBD5091ECB037400546708 /* AvailableCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBBD5081ECB037400546708 /* AvailableCars.swift */; };
+		BCDDF1811ECC2920006766F7 /* Enquiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDDF1801ECC2920006766F7 /* Enquiry.swift */; };
+		BCE5C5D61ECBF1560055127E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE5C5D51ECBF1560055127E /* MapKit.framework */; };
+		BCE5C5DA1ECBF4B10055127E /* ViewBooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE5C5D91ECBF4B10055127E /* ViewBooking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC1102E21ECC134B002B5D89 /* AboutUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
 		BC9F6E3B1EB1A7F100EAEEF3 /* RaceMyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaceMyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9F6E3E1EB1A7F100EAEEF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC9F6E401EB1A7F100EAEEF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,10 @@
 		BC9F6E5A1EB1A7F100EAEEF3 /* RaceMyCarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaceMyCarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9F6E5E1EB1A7F100EAEEF3 /* RaceMyCarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceMyCarUITests.swift; sourceTree = "<group>"; };
 		BC9F6E601EB1A7F100EAEEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCBBD5081ECB037400546708 /* AvailableCars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableCars.swift; sourceTree = "<group>"; };
+		BCDDF1801ECC2920006766F7 /* Enquiry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enquiry.swift; sourceTree = "<group>"; };
+		BCE5C5D51ECBF1560055127E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BCE5C5D91ECBF4B10055127E /* ViewBooking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBooking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCE5C5D61ECBF1560055127E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +92,7 @@
 				BC9F6E521EB1A7F100EAEEF3 /* RaceMyCarTests */,
 				BC9F6E5D1EB1A7F100EAEEF3 /* RaceMyCarUITests */,
 				BC9F6E3C1EB1A7F100EAEEF3 /* Products */,
+				BCE5C5D41ECBF1560055127E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +112,10 @@
 				BC9F6E3E1EB1A7F100EAEEF3 /* AppDelegate.swift */,
 				BC9F6E401EB1A7F100EAEEF3 /* ViewController.swift */,
 				BC9F6E421EB1A7F100EAEEF3 /* Main.storyboard */,
+				BCDDF1801ECC2920006766F7 /* Enquiry.swift */,
+				BC1102E21ECC134B002B5D89 /* AboutUs.swift */,
+				BCE5C5D91ECBF4B10055127E /* ViewBooking.swift */,
+				BCBBD5081ECB037400546708 /* AvailableCars.swift */,
 				BC9F6E451EB1A7F100EAEEF3 /* Assets.xcassets */,
 				BC9F6E471EB1A7F100EAEEF3 /* LaunchScreen.storyboard */,
 				BC9F6E4A1EB1A7F100EAEEF3 /* Info.plist */,
@@ -123,6 +139,14 @@
 				BC9F6E601EB1A7F100EAEEF3 /* Info.plist */,
 			);
 			path = RaceMyCarUITests;
+			sourceTree = "<group>";
+		};
+		BCE5C5D41ECBF1560055127E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCE5C5D51ECBF1560055127E /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +218,11 @@
 					BC9F6E3A1EB1A7F100EAEEF3 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					BC9F6E4E1EB1A7F100EAEEF3 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -259,8 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCE5C5DA1ECBF4B10055127E /* ViewBooking.swift in Sources */,
+				BCDDF1811ECC2920006766F7 /* Enquiry.swift in Sources */,
 				BC9F6E411EB1A7F100EAEEF3 /* ViewController.swift in Sources */,
+				BC1102E31ECC134B002B5D89 /* AboutUs.swift in Sources */,
 				BC9F6E3F1EB1A7F100EAEEF3 /* AppDelegate.swift in Sources */,
+				BCBBD5091ECB037400546708 /* AvailableCars.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +538,7 @@
 				BC9F6E651EB1A7F100EAEEF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC9F6E661EB1A7F100EAEEF3 /* Build configuration list for PBXNativeTarget "RaceMyCarTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +547,7 @@
 				BC9F6E681EB1A7F100EAEEF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC9F6E691EB1A7F100EAEEF3 /* Build configuration list for PBXNativeTarget "RaceMyCarUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +556,7 @@
 				BC9F6E6B1EB1A7F100EAEEF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

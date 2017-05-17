@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ieD-Xe-qbx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ieD-Xe-qbx">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Available Cars-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RaceMyCar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AvailableCars" customModule="RaceMyCar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -25,31 +25,49 @@
                                 <rect key="frame" x="16" y="134" width="132" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="jzx100"/>
+                                <connections>
+                                    <action selector="ChooseCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="orh-mM-FBa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvT-Bo-en7">
                                 <rect key="frame" x="171" y="134" width="132" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="mk2"/>
+                                <connections>
+                                    <action selector="ChooseCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4LC-eg-shz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOJ-5J-PzQ">
                                 <rect key="frame" x="16" y="254" width="132" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="r33"/>
+                                <connections>
+                                    <action selector="ChooseCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lo2-YP-4Bq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a45-px-XsD">
                                 <rect key="frame" x="171" y="254" width="132" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="rx7"/>
+                                <connections>
+                                    <action selector="ChooseCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZfT-ZP-vcp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3i-kp-CNT">
                                 <rect key="frame" x="16" y="369" width="132" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="s13"/>
+                                <connections>
+                                    <action selector="ChooseCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ui0-6k-nco"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1x-I2-Jxg">
                                 <rect key="frame" x="171" y="369" width="132" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="s14"/>
+                                <connections>
+                                    <action selector="ChooseCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N49-7A-oJM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhN-co-Uwa">
                                 <rect key="frame" x="28" y="56" width="265" height="46"/>
@@ -161,16 +179,17 @@
                     <tabBarItem key="tabBarItem" title="Available Cars" id="IZO-Ox-NP0"/>
                     <connections>
                         <segue destination="MM5-Ia-3IE" kind="show" id="T9b-2L-xd9"/>
+                        <segue destination="HSz-ob-fps" kind="show" identifier="CarDescription" id="tSU-I7-rph"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1074.375" y="129.92957746478874"/>
         </scene>
-        <!--View Controller-->
+        <!--Enquiry-->
         <scene sceneID="wOM-z6-0FH">
             <objects>
-                <viewController id="ecq-ZA-w67" sceneMemberID="viewController">
+                <viewController id="ecq-ZA-w67" customClass="Enquiry" customModule="RaceMyCar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FH3-Vx-vaK"/>
                         <viewControllerLayoutGuide type="bottom" id="P7a-TM-rbs"/>
@@ -205,30 +224,45 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5I-nX-h1g">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5I-nX-h1g">
                                 <rect key="frame" x="14" y="310" width="52" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="star"/>
+                                <connections>
+                                    <action selector="StarPressed:" destination="ecq-ZA-w67" eventType="touchUpInside" id="NM0-A1-368"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhc-am-K9j">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhc-am-K9j">
                                 <rect key="frame" x="74" y="310" width="52" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="star"/>
+                                <connections>
+                                    <action selector="StarPressed:" destination="ecq-ZA-w67" eventType="touchUpInside" id="MmM-Ca-6Cs"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGk-xx-kAl">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGk-xx-kAl">
                                 <rect key="frame" x="134" y="310" width="52" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="star"/>
+                                <connections>
+                                    <action selector="StarPressed:" destination="ecq-ZA-w67" eventType="touchUpInside" id="EJo-PP-TmE"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJb-bK-An8">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJb-bK-An8">
                                 <rect key="frame" x="194" y="310" width="52" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="star"/>
+                                <connections>
+                                    <action selector="StarPressed:" destination="ecq-ZA-w67" eventType="touchUpInside" id="dT8-Fi-0EG"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj9-Ec-6fQ">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj9-Ec-6fQ">
                                 <rect key="frame" x="254" y="310" width="52" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="star"/>
+                                <connections>
+                                    <action selector="StarPressed:" destination="ecq-ZA-w67" eventType="touchUpInside" id="c5N-7i-3Pa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -241,7 +275,7 @@
         <!--Current Booking-->
         <scene sceneID="NEy-0k-exs">
             <objects>
-                <viewController id="MM5-Ia-3IE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CurrentBooking" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MM5-Ia-3IE" customClass="ViewBooking" customModule="RaceMyCar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b9D-DH-s00"/>
                         <viewControllerLayoutGuide type="bottom" id="YGs-8z-Imk"/>
@@ -267,7 +301,7 @@
                                 <rect key="frame" x="91" y="87" width="148" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Car:">
+                                    <fragment content="label">
                                         <attributes>
                                             <font key="NSFont" size="17" name="Papyrus"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -300,24 +334,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Edit Booking"/>
                                 <connections>
-                                    <segue destination="nso-JU-HJX" kind="show" id="eav-Tw-fPV"/>
+                                    <segue destination="nso-JU-HJX" kind="show" id="REf-ck-aZk"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkN-jN-0xg">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkN-jN-0xg">
                                 <rect key="frame" x="28" y="473" width="126" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Payment Information"/>
                                 <connections>
-                                    <segue destination="mgn-cJ-Nwf" kind="show" id="Ral-LO-4wF"/>
+                                    <action selector="PaymentInfo:" destination="MM5-Ia-3IE" eventType="touchUpInside" id="peu-yw-JXH"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Current Booking" id="UGv-qq-GFG"/>
+                    <navigationItem key="navigationItem" id="0YW-mw-gAc"/>
                     <connections>
                         <segue destination="MsB-4j-UiA" kind="show" id="LuZ-H1-CMS"/>
+                        <segue destination="mgn-cJ-Nwf" kind="show" identifier="CustomerInfo" id="O0Y-xw-rAM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRh-A0-Aeb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -327,7 +363,7 @@
         <!--About Us-->
         <scene sceneID="v6z-WJ-e9x">
             <objects>
-                <viewController id="MsB-4j-UiA" sceneMemberID="viewController">
+                <viewController id="MsB-4j-UiA" customClass="AboutUs" customModule="RaceMyCar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uLI-rt-lQD"/>
                         <viewControllerLayoutGuide type="bottom" id="ku0-nb-B4N"/>
@@ -350,9 +386,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tGE-NR-sRE">
-                                <rect key="frame" x="40" y="302" width="240" height="217"/>
+                                <rect key="frame" x="40" y="302" width="246" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Race My Car follows strict guidelines according to CAMS. Please take some time to understand the terms and agreements in accordance to the CAMS policy. Race My Car is not responsible for any harm done to the individual if an accident occurs. Individuals will need to sign an agreement on the day. Fail to do so will result in the termination of the car and racing experience.</string>
+                                <string key="text">Race My Car follows strict guidelines according to           Please take some time to understand the terms and agreements in accordance to the CAMS policy. Race My Car is not responsible for any harm done to the individual if an accident occurs. Individuals will need to sign an agreement on the day. Fail to do so will result in the termination of the car and racing experience.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -376,11 +412,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="CAMS." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hwq-zZ-K27">
+                                <rect key="frame" x="193" y="321" width="49" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="About Us" id="RQN-TS-f20"/>
                     <connections>
+                        <outlet property="Text" destination="hwq-zZ-K27" id="Ctm-WX-poY"/>
                         <segue destination="AIV-OP-afR" kind="show" id="XRg-rU-68T"/>
                     </connections>
                 </viewController>
@@ -546,6 +589,9 @@
                                 <rect key="frame" x="9" y="20" width="35" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="BackBtn"/>
+                                <connections>
+                                    <segue destination="rCX-r8-mx3" kind="unwind" unwindAction="unWindSegueWithSegue:" id="OY1-nz-NKn"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAL-SL-ylp">
                                 <rect key="frame" x="28" y="61" width="265" height="46"/>
@@ -584,7 +630,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wGz-tm-DeM">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="202"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">John - "This car is awesome!"  Jason - "Rented this car out for the day, had no issues at all. Definetly coming back for more!!"  Bob - "Was surprised by my family with this experience for my birthday. The best fun I have had so far. This car is so fast and reliable."  Frank - "Had overheating issues for 30 minutes. Turned out to be bad coolant, the guys were able to fix the problem right away and I was off. Car handled well throughout the whole day, happy cusomer."</mutableString>
+                                        <string key="text">John - "This car is awesome!"  Jason - "Rented this car out for the day, had no issues at all. Definetly coming back for more!!"  Bob - "Was surprised by my family with this experience for my birthday. The best fun I have had so far. This car is so fast and reliable."  Frank - "Had overheating issues for 30 minutes. Turned out to be bad coolant, the guys were able to fix the problem right away and I was off. Car handled well throughout the whole day, happy cusomer."</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -594,19 +640,23 @@
                                 <rect key="frame" x="210" y="518" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Book Now"/>
+                                <connections>
+                                    <segue destination="5sp-ke-9KD" kind="show" id="bqu-Or-8Ey"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czI-V8-YUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rCX-r8-mx3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="135" y="835.56338028169012"/>
+            <point key="canvasLocation" x="135" y="870"/>
         </scene>
-        <!--View Controller-->
+        <!--Available Cars-->
         <scene sceneID="cU1-Vk-6kY">
             <objects>
-                <viewController id="HSz-ob-fps" sceneMemberID="viewController">
+                <viewController id="HSz-ob-fps" customClass="AvailableCars" customModule="RaceMyCar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jPf-e4-TZj"/>
                         <viewControllerLayoutGuide type="bottom" id="fsM-84-9sP"/>
@@ -623,19 +673,6 @@
                                         <attributes>
                                             <font key="NSFont" size="20" name="Papyrus"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9T-rc-ue4">
-                                <rect key="frame" x="106" y="100" width="109" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Toyota Jzx100">
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="Papyrus"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -658,7 +695,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G2o-ns-Rof">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mm/dd/yyyy" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G2o-ns-Rof">
                                 <rect key="frame" x="131" y="425" width="162" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -704,23 +741,44 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Book Now"/>
                                 <connections>
-                                    <segue destination="5sp-ke-9KD" kind="show" id="L9W-ik-mje"/>
+                                    <action selector="Book:" destination="HSz-ob-fps" eventType="touchUpInside" id="5vR-KV-XX7"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mk2copy" translatesAutoresizingMaskIntoConstraints="NO" id="kdt-lZ-8V2">
                                 <rect key="frame" x="40" y="126" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMe-PW-BjF">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yox-3z-lMY">
                                 <rect key="frame" x="9" y="20" width="35" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="BackBtn"/>
+                                <connections>
+                                    <segue destination="uIF-qa-xyR" kind="unwind" unwindAction="unWindSegueWithSegue:" id="bSz-jh-Er0"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2U-YY-fQP">
+                                <rect key="frame" x="75" y="97" width="170" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Toyota JZX100">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Papyrus"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="CarPicture" destination="kdt-lZ-8V2" id="TTr-rl-KoE"/>
+                        <segue destination="5sp-ke-9KD" kind="show" identifier="ConfirmBooking" id="qFl-j4-3bi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDI-rO-69S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="uIF-qa-xyR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1072.5" y="835.56338028169012"/>
         </scene>
@@ -740,6 +798,9 @@
                                 <rect key="frame" x="9" y="20" width="35" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="BackBtn"/>
+                                <connections>
+                                    <segue destination="nCP-pS-mf3" kind="unwind" unwindAction="unWindSegueWithSegue:" id="gs5-BQ-X2k"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wg-7G-EUM">
                                 <rect key="frame" x="30" y="45" width="265" height="46"/>
@@ -1045,19 +1106,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Book"/>
+                                <connections>
+                                    <segue destination="CRy-tL-wco" kind="show" id="XqD-15-OsA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="plF-hL-vob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nCP-pS-mf3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1072.5" y="1535.9154929577464"/>
+            <point key="canvasLocation" x="1073" y="1655"/>
         </scene>
-        <!--View Controller-->
+        <!--Available Cars-->
         <scene sceneID="UVx-Hv-H4e">
             <objects>
-                <viewController id="CRy-tL-wco" sceneMemberID="viewController">
+                <viewController id="CRy-tL-wco" customClass="AvailableCars" customModule="RaceMyCar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m6W-gW-2uZ"/>
                         <viewControllerLayoutGuide type="bottom" id="MrM-Ev-L93"/>
@@ -1085,14 +1150,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="View your current booking"/>
+                                <connections>
+                                    <action selector="ViewBooking:" destination="CRy-tL-wco" eventType="touchUpInside" id="Ier-oI-q6b"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="MM5-Ia-3IE" kind="show" identifier="CurrentBooking" id="471-FO-kUH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLN-L9-WEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1072.5" y="2246.8309859154929"/>
+            <point key="canvasLocation" x="1073" y="2402"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VYe-qV-U0c">
@@ -1415,12 +1486,16 @@
                                 <rect key="frame" x="9" y="20" width="35" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="BackBtn"/>
+                                <connections>
+                                    <segue destination="Dx1-tw-b8v" kind="unwind" unwindAction="unWindSegueWithSegue:" id="QwG-qz-btl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jyZ-pw-V5E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Dx1-tw-b8v" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1869.375" y="835.56338028169012"/>
         </scene>
@@ -1440,6 +1515,9 @@
                                 <rect key="frame" x="9" y="20" width="35" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="BackBtn"/>
+                                <connections>
+                                    <segue destination="bEf-nX-GC3" kind="unwind" unwindAction="unWindSegueWithSegue:" id="Lcj-Ci-KXY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZD-vq-lmO">
                                 <rect key="frame" x="28" y="61" width="265" height="46"/>
@@ -1493,6 +1571,9 @@
                                 <rect key="frame" x="206" y="489" width="107" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel Booking"/>
+                                <connections>
+                                    <segue destination="Dq7-zB-FeD" kind="show" id="Nfb-zj-c6w"/>
+                                </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qgr-Ip-suk">
                                 <rect key="frame" x="28" y="334" width="265" height="126"/>
@@ -1506,8 +1587,9 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uiw-qu-Vgk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bEf-nX-GC3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1867.5" y="1535.9154929577464"/>
+            <point key="canvasLocation" x="1868" y="1654"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6oT-Ng-YoW">
@@ -1525,6 +1607,9 @@
                                 <rect key="frame" x="9" y="20" width="35" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="BackBtn"/>
+                                <connections>
+                                    <segue destination="TC1-YZ-gHF" kind="unwind" unwindAction="unWindSegueWithSegue:" id="0vO-Vu-KfD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02f-Iv-nAs">
                                 <rect key="frame" x="26" y="56" width="265" height="46"/>
@@ -1564,14 +1649,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Cancel Booking"/>
+                                <connections>
+                                    <segue destination="JUW-hS-qsT" kind="show" id="htw-pU-tat"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5I9-R2-LaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="TC1-YZ-gHF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1869.375" y="2246.8309859154929"/>
+            <point key="canvasLocation" x="1871" y="2401"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="x39-YL-zVe">
@@ -1610,7 +1699,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXD-E1-Djl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1867.5" y="2946.1267605633802"/>
+            <point key="canvasLocation" x="1871" y="3112"/>
         </scene>
     </scenes>
     <resources>
@@ -1629,5 +1718,6 @@
         <segue reference="T9b-2L-xd9"/>
         <segue reference="LuZ-H1-CMS"/>
         <segue reference="XRg-rU-68T"/>
+        <segue reference="bqu-Or-8Ey"/>
     </inferredMetricsTieBreakers>
 </document>
