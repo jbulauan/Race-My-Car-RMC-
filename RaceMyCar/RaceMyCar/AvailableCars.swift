@@ -10,6 +10,15 @@ import UIKit
 
 class AvailableCars: UIViewController {
     
+    @IBOutlet weak var jzx100: UILabel!
+    @IBOutlet weak var chaser: UILabel!
+    @IBOutlet weak var rx7: UILabel!
+    @IBOutlet weak var skyline: UILabel!
+    @IBOutlet weak var s14: UILabel!
+    @IBOutlet weak var s13: UILabel!
+
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,24 +32,29 @@ class AvailableCars: UIViewController {
     
 
    
-    @IBOutlet weak var CarPicture: UIImageView!
-    @IBOutlet weak var VehicleName: UILabel!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let DestViewController : AvailableCarDescription = segue.destination as! AvailableCarDescription
+        
+        DestViewController.CarChosen = chaser.text!
+        
+       
+        
+        
+    }
 
     
     @IBAction func ChooseCar(_ sender: UIButton) {
         
-        
         performSegue(withIdentifier:"CarDescription", sender: sender.tag)
-
-    }
-    
-    //commencement of next segue that will go to the segue identified as ConfirmBooking.
-    @IBAction func Book(_ sender: UIButton) {
         
-    
-        performSegue(withIdentifier:"ConfirmBooking", sender: sender.tag)
+     
+   
+        
     }
     
+    
+ 
     //reverting to previous segue
     @IBAction func unWindSegue(segue : UIStoryboardSegue)
     {

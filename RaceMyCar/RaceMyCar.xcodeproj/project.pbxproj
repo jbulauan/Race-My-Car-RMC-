@@ -17,6 +17,7 @@
 		BC9F6E5F1EB1A7F100EAEEF3 /* RaceMyCarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6E5E1EB1A7F100EAEEF3 /* RaceMyCarUITests.swift */; };
 		BCBBD5091ECB037400546708 /* AvailableCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBBD5081ECB037400546708 /* AvailableCars.swift */; };
 		BCDDF1811ECC2920006766F7 /* Enquiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDDF1801ECC2920006766F7 /* Enquiry.swift */; };
+		BCDE07331ECD207500B184B4 /* AvailableCarDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDE07321ECD207500B184B4 /* AvailableCarDescription.swift */; };
 		BCE5C5D61ECBF1560055127E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE5C5D51ECBF1560055127E /* MapKit.framework */; };
 		BCE5C5DA1ECBF4B10055127E /* ViewBooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE5C5D91ECBF4B10055127E /* ViewBooking.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		BC9F6E601EB1A7F100EAEEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCBBD5081ECB037400546708 /* AvailableCars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableCars.swift; sourceTree = "<group>"; };
 		BCDDF1801ECC2920006766F7 /* Enquiry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enquiry.swift; sourceTree = "<group>"; };
+		BCDE07321ECD207500B184B4 /* AvailableCarDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableCarDescription.swift; sourceTree = "<group>"; };
 		BCE5C5D51ECBF1560055127E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BCE5C5D91ECBF4B10055127E /* ViewBooking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBooking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 				BC1102E21ECC134B002B5D89 /* AboutUs.swift */,
 				BCE5C5D91ECBF4B10055127E /* ViewBooking.swift */,
 				BCBBD5081ECB037400546708 /* AvailableCars.swift */,
+				BCDE07321ECD207500B184B4 /* AvailableCarDescription.swift */,
 				BC9F6E451EB1A7F100EAEEF3 /* Assets.xcassets */,
 				BC9F6E471EB1A7F100EAEEF3 /* LaunchScreen.storyboard */,
 				BC9F6E4A1EB1A7F100EAEEF3 /* Info.plist */,
@@ -294,6 +297,7 @@
 				BC1102E31ECC134B002B5D89 /* AboutUs.swift in Sources */,
 				BC9F6E3F1EB1A7F100EAEEF3 /* AppDelegate.swift in Sources */,
 				BCBBD5091ECB037400546708 /* AvailableCars.swift in Sources */,
+				BCDE07331ECD207500B184B4 /* AvailableCarDescription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

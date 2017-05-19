@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="jzx100"/>
                                 <connections>
-                                    <action selector="ChooseCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="orh-mM-FBa"/>
+                                    <action selector="ChooseCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yTk-BQ-IsI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvT-Bo-en7">
@@ -34,7 +34,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="mk2"/>
                                 <connections>
-                                    <action selector="ChooseCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4LC-eg-shz"/>
+                                    <action selector="ChooseCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wIC-JQ-6ET"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOJ-5J-PzQ">
@@ -178,6 +178,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Available Cars" id="IZO-Ox-NP0"/>
                     <connections>
+                        <outlet property="chaser" destination="2Ml-Yo-lss" id="S4u-BX-lRY"/>
+                        <outlet property="jzx100" destination="xSI-A1-7Pc" id="IgO-UP-yPw"/>
+                        <outlet property="rx7" destination="SNP-n9-jKH" id="cVn-7t-X1i"/>
+                        <outlet property="s13" destination="zTR-8i-PeW" id="dOr-ec-Pjn"/>
+                        <outlet property="s14" destination="6Wf-EX-ENH" id="gOF-CY-SHP"/>
+                        <outlet property="skyline" destination="Ou3-rL-fI6" id="uCp-9b-lqm"/>
                         <segue destination="MM5-Ia-3IE" kind="show" id="T9b-2L-xd9"/>
                         <segue destination="HSz-ob-fps" kind="show" identifier="CarDescription" id="tSU-I7-rph"/>
                     </connections>
@@ -652,10 +658,10 @@
             </objects>
             <point key="canvasLocation" x="135" y="870"/>
         </scene>
-        <!--Available Cars-->
+        <!--Available Car Description-->
         <scene sceneID="cU1-Vk-6kY">
             <objects>
-                <viewController id="HSz-ob-fps" customClass="AvailableCars" customModule="RaceMyCar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HSz-ob-fps" customClass="AvailableCarDescription" customModule="RaceMyCar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jPf-e4-TZj"/>
                         <viewControllerLayoutGuide type="bottom" id="fsM-84-9sP"/>
@@ -740,7 +746,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Book Now"/>
                                 <connections>
-                                    <action selector="Book:" destination="HSz-ob-fps" eventType="touchUpInside" id="5vR-KV-XX7"/>
+                                    <action selector="Book:" destination="HSz-ob-fps" eventType="touchUpInside" id="q6v-7f-OUw"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mk2copy" translatesAutoresizingMaskIntoConstraints="NO" id="kdt-lZ-8V2">
@@ -772,7 +778,8 @@
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="CarPicture" destination="kdt-lZ-8V2" id="TTr-rl-KoE"/>
+                        <outlet property="CarImage" destination="kdt-lZ-8V2" id="7YD-M5-MTC"/>
+                        <outlet property="CarName" destination="v2U-YY-fQP" id="FQZ-fa-LTW"/>
                         <segue destination="5sp-ke-9KD" kind="show" identifier="ConfirmBooking" id="qFl-j4-3bi"/>
                     </connections>
                 </viewController>
@@ -798,7 +805,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="BackBtn"/>
                                 <connections>
-                                    <segue destination="nCP-pS-mf3" kind="unwind" unwindAction="unWindSegueWithSegue:" id="gs5-BQ-X2k"/>
+                                    <segue destination="nCP-pS-mf3" kind="unwind" unwindAction="unWindSegueWithSegue:" id="2tz-V7-3e7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wg-7G-EUM">
@@ -1743,9 +1750,9 @@
         <image name="star" width="800" height="800"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qdv-fG-FRu"/>
-        <segue reference="LuZ-H1-CMS"/>
         <segue reference="XRg-rU-68T"/>
+        <segue reference="LuZ-H1-CMS"/>
+        <segue reference="T9b-2L-xd9"/>
         <segue reference="qFl-j4-3bi"/>
     </inferredMetricsTieBreakers>
 </document>
