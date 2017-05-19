@@ -16,6 +16,8 @@ class AboutUs: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tabBarController?.tabBar.isHidden = false
+        
         // Hyperlink feature, this is hyperlinked text will direct to, which is where the website is entered.
         let linkAttributes = [
             NSLinkAttributeName: NSURL(string: "https://www.cams.com.au/motor-sport/safety-integrity/ohs-policy")!,

@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOQ-Ae-Op5">
@@ -201,7 +201,7 @@
                         <viewControllerLayoutGuide type="bottom" id="P7a-TM-rbs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ubv-Nr-N5l">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hu-sC-RDe">
@@ -270,6 +270,17 @@
                                     <action selector="StarPressed:" destination="ecq-ZA-w67" eventType="touchUpInside" id="c5N-7i-3Pa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HO8-UU-Zks">
+                                <rect key="frame" x="112" y="429" width="96" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Main Menu">
+                                    <color key="titleColor" red="1" green="0.36538028179999998" blue="0.33727802369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ieD-Xe-qbx" kind="show" id="0Tl-5x-Jix"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -287,7 +298,7 @@
                         <viewControllerLayoutGuide type="bottom" id="YGs-8z-Imk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="o7x-Hn-O2R">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuG-f5-BdB">
@@ -303,55 +314,47 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9y-Fa-FMM">
-                                <rect key="frame" x="91" y="87" width="148" height="27"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOB-WT-LAX">
+                                <rect key="frame" x="92" y="431" width="137" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="label">
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="Papyrus"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtw-Y1-lAj">
-                                <rect key="frame" x="56" y="122" width="218" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Edit Booking">
+                                    <color key="titleColor" red="1" green="0.36538028179999998" blue="0.33727802369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nso-JU-HJX" kind="show" id="REf-ck-aZk"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zia-QU-O6A">
-                                <rect key="frame" x="33" y="222" width="265" height="74"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkN-jN-0xg">
+                                <rect key="frame" x="91" y="354" width="138" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Payment Information">
+                                    <color key="titleColor" red="1" green="0.36538028179999998" blue="0.33727802369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mgn-cJ-Nwf" kind="show" id="gmh-Op-CJx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zj3-t2-yXn">
+                                <rect key="frame" x="74" y="102" width="173" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="No Current Booking">
+                                    <fragment content="Toyota JZX100">
                                         <attributes>
-                                            <font key="NSFont" size="22" name="Papyrus"/>
+                                            <font key="NSFont" size="21" name="Papyrus"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOB-WT-LAX">
-                                <rect key="frame" x="199" y="473" width="99" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mk2copy" translatesAutoresizingMaskIntoConstraints="NO" id="aNP-UR-ypV">
+                                <rect key="frame" x="28" y="157" width="267" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <state key="normal" title="Edit Booking"/>
-                                <connections>
-                                    <segue destination="nso-JU-HJX" kind="show" id="REf-ck-aZk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkN-jN-0xg">
-                                <rect key="frame" x="28" y="473" width="126" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <state key="normal" title="Payment Information"/>
-                                <connections>
-                                    <segue destination="mgn-cJ-Nwf" kind="show" id="gmh-Op-CJx"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -374,7 +377,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ku0-nb-B4N"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LzU-bF-lxL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jW-aa-t2w">
@@ -445,7 +448,7 @@
                         <viewControllerLayoutGuide type="bottom" id="x5l-qO-oFd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YFe-vt-Ag1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgu-Wg-wmI">
@@ -543,6 +546,8 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cZ-Re-p8C">
                                 <rect key="frame" x="141" y="487" width="36" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="0.36538028179999998" blue="0.33727802369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Send"/>
                                 <connections>
                                     <segue destination="ecq-ZA-w67" kind="show" id="ngK-Ph-XS9"/>
@@ -562,8 +567,9 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ieD-Xe-qbx" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="rny-Kb-h3S">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="rny-Kb-h3S">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -587,7 +593,7 @@
                         <viewControllerLayoutGuide type="bottom" id="zZJ-iB-NqD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GMi-TR-utl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAH-Zv-yg7">
@@ -644,7 +650,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOE-j9-Fo8">
                                 <rect key="frame" x="210" y="518" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Book Now"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="0.36538028179999998" blue="0.33727802369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Book Now">
+                                    <color key="titleColor" red="1" green="0.36538028179999998" blue="0.33727802369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="5sp-ke-9KD" kind="show" id="bqu-Or-8Ey"/>
                                 </connections>
@@ -667,7 +677,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fsM-84-9sP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gdC-br-WRP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAD-AP-2iB">
@@ -736,6 +746,8 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcK-bo-x0N">
                                 <rect key="frame" x="28" y="517" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="0.36538028179999998" blue="0.33727802369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Reviews"/>
                                 <connections>
                                     <segue destination="wZ5-bB-NRc" kind="show" id="cA8-Du-ufd"/>
@@ -744,6 +756,8 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DM4-KJ-YzV">
                                 <rect key="frame" x="223" y="517" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="0.36538028179999998" blue="0.33727802369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Book Now"/>
                                 <connections>
                                     <action selector="Book:" destination="HSz-ob-fps" eventType="touchUpInside" id="q6v-7f-OUw"/>
@@ -797,7 +811,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bf4-Jo-gjg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iVL-cb-non">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCT-cr-njH">
@@ -1110,7 +1124,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5M-eG-6nR">
                                 <rect key="frame" x="118" y="509" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" red="1" green="0.36538028179999998" blue="0.33727802369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Confirm"/>
                                 <connections>
                                     <action selector="SaveInfo:" destination="5sp-ke-9KD" eventType="touchUpInside" id="5Pa-4F-9RS"/>
@@ -1142,16 +1158,16 @@
             </objects>
             <point key="canvasLocation" x="1072.5" y="1654.2253521126761"/>
         </scene>
-        <!--Available Cars-->
+        <!--View Controller-->
         <scene sceneID="UVx-Hv-H4e">
             <objects>
-                <viewController id="CRy-tL-wco" customClass="AvailableCars" customModule="RaceMyCar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CRy-tL-wco" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m6W-gW-2uZ"/>
                         <viewControllerLayoutGuide type="bottom" id="MrM-Ev-L93"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oiL-X5-Qn2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FvG-UH-dH1">
@@ -1171,8 +1187,14 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNg-qX-4Q0">
                                 <rect key="frame" x="43" y="428" width="234" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="View your current booking"/>
+                                <state key="normal" title="Main Menu">
+                                    <color key="titleColor" red="1" green="0.36538028179999998" blue="0.33727802369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ieD-Xe-qbx" kind="show" id="zAH-NX-RzX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1191,7 +1213,7 @@
                         <viewControllerLayoutGuide type="bottom" id="d3C-gP-MjJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8SV-qw-reD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vU-b1-5sx">
@@ -1496,7 +1518,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVd-Rl-T8C">
                                 <rect key="frame" x="111" y="492" width="106" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.36538028179999998" blue="0.33727802369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Apply Changes"/>
                                 <connections>
                                     <action selector="SaveInfo:" destination="mgn-cJ-Nwf" eventType="touchUpInside" id="uaS-P9-BgL"/>
@@ -1543,7 +1567,7 @@
                         <viewControllerLayoutGuide type="bottom" id="lPW-QF-aF1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pzJ-vZ-hsO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpM-Hp-jrZ">
@@ -1600,11 +1624,18 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgh-74-QF5">
                                 <rect key="frame" x="9" y="489" width="104" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="0.36538028179999998" blue="0.33727802369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Apply Changes"/>
+                                <connections>
+                                    <segue destination="MM5-Ia-3IE" kind="show" id="3U1-fF-NzE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9O-JU-gxn">
                                 <rect key="frame" x="206" y="489" width="107" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="0.36538028179999998" blue="0.33727802369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Cancel Booking"/>
                                 <connections>
                                     <segue destination="Dq7-zB-FeD" kind="show" id="Nfb-zj-c6w"/>
@@ -1635,7 +1666,7 @@
                         <viewControllerLayoutGuide type="bottom" id="lnL-DD-akA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wTq-7r-Kkn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69f-2s-Wnk">
@@ -1682,10 +1713,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qko-35-MNa">
                                 <rect key="frame" x="41" y="488" width="234" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="tintColor" red="1" green="0.36538028179999998" blue="0.33727802369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Cancel Booking"/>
                                 <connections>
-                                    <segue destination="JUW-hS-qsT" kind="show" id="htw-pU-tat"/>
+                                    <segue destination="JUW-hS-qsT" kind="show" id="Tr0-uC-gNx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1700,13 +1733,13 @@
         <!--View Controller-->
         <scene sceneID="x39-YL-zVe">
             <objects>
-                <viewController id="JUW-hS-qsT" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="JUW-hS-qsT" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YIo-Cc-0B4"/>
                         <viewControllerLayoutGuide type="bottom" id="vc5-4v-hjm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Z1x-ex-k7w">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IB2-kR-LHg">
@@ -1722,19 +1755,25 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPH-mo-yKp">
-                                <rect key="frame" x="43" y="343" width="234" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjv-4Y-Kjg">
+                                <rect key="frame" x="112" y="359" width="96" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Main Menu"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Main Menu">
+                                    <color key="titleColor" red="1" green="0.36538028179999998" blue="0.33727802369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ieD-Xe-qbx" kind="show" id="hX6-oo-NBA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52520138029999996" green="0.12493791429999999" blue="0.10569622369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zIU-EU-ZmT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXD-E1-Djl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1871" y="3112"/>
+            <point key="canvasLocation" x="1868" y="3118"/>
         </scene>
     </scenes>
     <resources>
@@ -1750,8 +1789,9 @@
         <image name="star" width="800" height="800"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XRg-rU-68T"/>
-        <segue reference="LuZ-H1-CMS"/>
+        <segue reference="RMx-Tj-ETo"/>
+        <segue reference="0Tl-5x-Jix"/>
+        <segue reference="Uu0-yf-PNW"/>
         <segue reference="T9b-2L-xd9"/>
         <segue reference="qFl-j4-3bi"/>
     </inferredMetricsTieBreakers>

@@ -19,6 +19,8 @@ class AvailableCarDescription: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tabBarController?.tabBar.isHidden = false
+        
         CarName.text = CarChosen
      
         

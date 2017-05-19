@@ -21,7 +21,8 @@ class AvailableCars: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.tabBarController?.tabBar.isHidden = false
         // Do any additional setup after loading the view.
     }
 
@@ -36,7 +37,7 @@ class AvailableCars: UIViewController {
         
         let DestViewController : AvailableCarDescription = segue.destination as! AvailableCarDescription
         
-        DestViewController.CarChosen = chaser.text!
+        DestViewController.CarChosen = jzx100.text!
         
        
         
